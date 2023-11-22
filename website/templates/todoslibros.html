@@ -1,0 +1,39 @@
+{% extends "base.html" %} {% block title %}Login{% endblock %} {% block content
+%}
+
+
+
+
+
+<div>
+    <header>
+        <h2>Libreria</h2>
+        <nav>
+            <ul>
+                <li>Inicio</li>
+                <li>Todos los productos</li>
+                <li>Sobre Nosotros</li>
+            </ul>
+        </nav>
+    </header>
+    <h3>Lista de libros</h3>
+    <section>
+        <!-- Card -->
+        {% for l in librito %}
+        <div>
+
+            <h2>{{ l.nombre }}</h2>
+            <p>{{ l.tema }}</p>
+        </div>
+
+        {% endfor %}
+
+
+    </section>
+</div>
+
+
+
+
+
+{% endblock %}
